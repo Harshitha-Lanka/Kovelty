@@ -56,28 +56,30 @@ const Navbar = () => {
                 aria-expanded={isServicesOpen}
                 aria-controls="services-dropdown"
               >
-                <span className="rolling-text">Services</span>
+                <Link to="/services">
+                  <span className="rolling-text">Services</span>
+                </Link>
               </a>
               <div
                 className={`dropdown-menu ${isServicesOpen ? 'show' : ''}`}
                 id="services-dropdown"
               >
-                <Link className="dropdown-item" to="/app-development">
+                <Link className="dropdown-item" to="/services/app-development">
                   Application Development
                 </Link>
-                <Link className="dropdown-item" to="/mobile-development">
+                <Link className="dropdown-item" to="/services/mobile-development">
                   Mobile App Development
                 </Link>
-                <Link className="dropdown-item" to="/product-management">
+                <Link className="dropdown-item" to="/services/product-management">
                   Product Management
                 </Link>
-                <Link className="dropdown-item" to="/qa-and-automation">
+                <Link className="dropdown-item" to="/services/qa-and-automation">
                   QA & Automation
                 </Link>
-                <Link className="dropdown-item" to="/cloud-services">
+                <Link className="dropdown-item" to="/services/cloud-services">
                   Cloud Services
                 </Link>
-                <Link className="dropdown-item" to="/ai-and-ml">
+                <Link className="dropdown-item" to="/services/ai-and-ml">
                   AI & ML
                 </Link>
               </div>

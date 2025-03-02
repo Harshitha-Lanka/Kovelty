@@ -64,7 +64,7 @@ const Services = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg bord main-bg">
+      {/* <nav className="navbar navbar-expand-lg bord main-bg">
       <div className="container">
         <a className="logo icon-img-100" href="/">
           <img src={KovaltyLogo} alt="logo" />
@@ -89,7 +89,7 @@ const Services = () => {
               </div>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link" href="about.html"><span className="rolling-text">About us</span></a>
+              <a className="nav-link" href="/about"><span className="rolling-text">About us</span></a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/contact"><span className="rolling-text">Contact</span></a>
@@ -97,7 +97,7 @@ const Services = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> */}
 
       {/* Main Content */}
       <main>
