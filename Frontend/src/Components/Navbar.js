@@ -1,119 +1,100 @@
-// import React from "react";
-
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar navbar-expand-lg bord main-bg">
-//       <div className="container">
-//         <a className="logo icon-img-100" href="/">
-//           <img src="assets/imgs/Kovalty.png" alt="logo" />
-//         </a>
-
-//         <button
-//           className="navbar-toggler"
-//           type="button"
-//           data-toggle="collapse"
-//           data-target="#navbarSupportedContent"
-//           aria-controls="navbarSupportedContent"
-//           aria-expanded="false"
-//           aria-label="Toggle navigation"
-//         >
-//           <span className="icon-bar"><i className="fas fa-bars"></i></span>
-//         </button>
-
-//         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-//           <ul className="navbar-nav">
-//             <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-//             <li className="nav-item dropdown">
-//               <a className="nav-link dropdown-toggle" href="/services" data-toggle="dropdown">Services</a>
-//               <div className="dropdown-menu">
-//                 <a className="dropdown-item" href="/app-development">Application Development</a>
-//                 <a className="dropdown-item" href="/mobile-development">Mobile App Development</a>
-//                 <a className="dropdown-item" href="/product-management">Product Management</a>
-//                 <a className="dropdown-item" href="/qa-and-automation">QA & Automation</a>
-//                 <a className="dropdown-item" href="/cloud-services">Cloud Services</a>
-//                 <a className="dropdown-item" href="/ai-and-ml">AI & ML</a>
-//               </div>
-//             </li>
-//             <li className="nav-item"><a className="nav-link" href="/about">About us</a></li>
-//             <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
-//           </ul>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom'; // Use NavLink for active styling
 import KovaltyLogo from '../assets/images/Kovalty.png';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // State for mobile navbar toggle
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // State for Services dropdown
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleServicesDropdown = () => {
+    setIsServicesOpen(!isServicesOpen);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bord main-bg">
       <div className="container">
-        <a className="logo icon-img-100" href="/">
+        {/* Logo */}
+        <Link className="logo icon-img-100" to="/">
           <img src={KovaltyLogo} alt="logo" />
-        </a>
+        </Link>
+
+        {/* Mobile Toggle Button */}
         <button
           className="navbar-toggler"
           type="button"
           onClick={toggleNavbar}
           aria-label="Toggle navigation"
         >
-          <span className="icon-bar"><i className="fas fa-bars"></i></span>
+          <span className="icon-bar">
+            <i className="fas fa-bars"></i>
+          </span>
         </button>
+
+        {/* Navbar Links */}
         <div
           className={`collapse navbar-collapse justify-content-center ${isOpen ? 'show' : ''}`}
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
-            <li className="nav-item dropdown">
-              <a className="nav-link" href="/">
+            {/* Home Link */}
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/" exact activeClassName="active">
                 <span className="rolling-text">Home</span>
-              </a>
+              </NavLink>
             </li>
+
+            {/* Services Dropdown */}
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="/services">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#services"
+                onClick={toggleServicesDropdown}
+                aria-expanded={isServicesOpen}
+                aria-controls="services-dropdown"
+              >
                 <span className="rolling-text">Services</span>
               </a>
-              <div className="dropdown-menu">
-                <a className="dropdown-item" href="/app-development">Application Development</a>
-                <a className="dropdown-item" href="/mobile-development">Mobile App Development</a>
-                <a className="dropdown-item" href="/product-management">Product Management</a>
-                <a className="dropdown-item" href="/qa-and-automation">QA & Automation</a>
-                <a className="dropdown-item" href="/cloud-services">Cloud Services</a>
-                <a className="dropdown-item" href="/ai-and-ml">AI & ML</a>
+              <div
+                className={`dropdown-menu ${isServicesOpen ? 'show' : ''}`}
+                id="services-dropdown"
+              >
+                <Link className="dropdown-item" to="/app-development">
+                  Application Development
+                </Link>
+                <Link className="dropdown-item" to="/mobile-development">
+                  Mobile App Development
+                </Link>
+                <Link className="dropdown-item" to="/product-management">
+                  Product Management
+                </Link>
+                <Link className="dropdown-item" to="/qa-and-automation">
+                  QA & Automation
+                </Link>
+                <Link className="dropdown-item" to="/cloud-services">
+                  Cloud Services
+                </Link>
+                <Link className="dropdown-item" to="/ai-and-ml">
+                  AI & ML
+                </Link>
               </div>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link" href="/about">
-                <span className="rolling-text">About us</span>
-              </a>
-            </li>
+
+            {/* About Us Link */}
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
+              <NavLink className="nav-link" to="/about" activeClassName="active">
+                <span className="rolling-text">About us</span>
+              </NavLink>
+            </li>
+
+            {/* Contact Link */}
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact" activeClassName="active">
                 <span className="rolling-text">Contact</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

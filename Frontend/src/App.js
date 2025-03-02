@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Services from './pages/Services';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './pages/About';
 
 
 
@@ -16,6 +17,7 @@ const App = () => (
     <Route path="/" element={<Home />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/services" element={<Services />} />
+    <Route path="/about" element={<About/>}/>
 
   </Routes>
 );
