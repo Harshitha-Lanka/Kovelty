@@ -23,6 +23,8 @@ import '../Components/plugins.css';
 
 const Home = () => (
   <>
+
+    
     <Navbar />
     <header className="crev-header">
       <div className="container mt-80">
