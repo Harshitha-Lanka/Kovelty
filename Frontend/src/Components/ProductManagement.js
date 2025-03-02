@@ -27,7 +27,7 @@ const ProductManagement = () => {
       {/* ==================== Start Navbar ==================== */}
       {/* <nav className="navbar navbar-expand-lg bord main-bg">
         <div className="container">
-          <a className="logo icon-img-100" href="index.html">
+          <a className="logo icon-img-100" href="/">
             <img src="assets/imgs/Kovalty.png" alt="logo" />
           </a>
           <button
@@ -46,12 +46,12 @@ const ProductManagement = () => {
           <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item dropdown">
-                <a className="nav-link" data-toggle="dropdown" href="index.html" role="button">
+                <a className="nav-link" data-toggle="dropdown" href="/" role="button">
                   <span className="rolling-text">Home</span>
                 </a>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="services.html" role="button">
+                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="/services" role="button">
                   <span className="rolling-text">Services</span>
                 </a>
                 <div className="dropdown-menu">
@@ -59,17 +59,17 @@ const ProductManagement = () => {
                   <a className="dropdown-item" href="mobile-development.html">Mobile App Development</a>
                   <a className="dropdown-item" href="product-management.html">Product Management</a>
                   <a className="dropdown-item" href="qa-and-automation.html">QA & Automation</a>
-                  <a className="dropdown-item" href="cloud-services.html">Cloud Services</a>
+                  <a className="dropdown-item" href="cloud-/services">Cloud Services</a>
                   <a className="dropdown-item" href="ai-and-ml.html">AI & ML</a>
                 </div>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link" data-toggle="dropdown" href="about.html" role="button">
+                <a className="nav-link" data-toggle="dropdown" href="/about" role="button">
                   <span className="rolling-text">About us</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="contact.html">
+                <a className="nav-link" href="/contact">
                   <span className="rolling-text">Contact</span>
                 </a>
               </li>
@@ -255,7 +255,7 @@ const ProductManagement = () => {
             <div className="row">
               <div className="col-lg-4">
                 <div className="logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img src="assets/imgs/Kovalty.png" alt="" />
                   </a>
                 </div>
@@ -266,7 +266,7 @@ const ProductManagement = () => {
                     <p className="fz-13">
                       Copyright ©️{' '}
                       <span className="underline">
-                        <a href="index.html" target="_blank" rel="noopener noreferrer">
+                        <a href="/" target="_blank" rel="noopener noreferrer">
                           Kovalty Technologies
                         </a>
                       </span>{' '}

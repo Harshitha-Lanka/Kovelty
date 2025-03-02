@@ -49,13 +49,13 @@ const CloudServices = () => {
                 <a className="nav-link" data-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false"><span className="rolling-text">Home</span></a>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="services.html" role="button" aria-haspopup="true" aria-expanded="false"><span className="rolling-text">Services</span></a>
+                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="/services" role="button" aria-haspopup="true" aria-expanded="false"><span className="rolling-text">Services</span></a>
                 <div className="dropdown-menu">
                   <a className="dropdown-item" href="app-development.html">Application Development</a>
                   <a className="dropdown-item" href="mobile-development.html">Mobile App Development</a>
                   <a className="dropdown-item" href="product-management.html">Product Management</a>
                   <a className="dropdown-item" href="qa-and-automation.html">QA & Automation</a>
-                  <a className="dropdown-item" href="cloud-services.html">Cloud Services</a>
+                  <a className="dropdown-item" href="cloud-/services">Cloud Services</a>
                   <a className="dropdown-item" href="ai-and-ml.html">AI & ML</a>
                 </div>
               </li>

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "@studio-freight/lenis": "^1.0.42",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
@@ -11,14 +12,18 @@
     "animate.css": "^4.1.1",
     "axios": "^1.8.1",
     "bootstrap": "^5.3.3",
+    "fullpage.js": "^4.0.33",
     "gsap": "^3.12.7",
     "gsap-trial": "^3.12.7",
+    "locomotive-scroll": "^4.1.4",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
+    "react-fullpage": "^0.1.19",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^7.2.0",
     "react-scripts": "5.0.1",
+    "smooth-scrollbar": "^8.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

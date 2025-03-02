@@ -362,7 +362,7 @@ const Home = () => {
                         We specialize in application development, helping businesses leverage technology to streamline operations, enhance productivity, and drive growth. Our experienced team of developers, designers, and project managers work collaboratively to create custom applications tailored to meet your unique business needs.
                       </p>
                       <div className="crv-more">
-                        <a href="services.html" className="mt-30 ls1 fz-12 text-u">
+                        <a href="/services" className="mt-30 ls1 fz-12 text-u">
                           Read More
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -386,7 +386,7 @@ const Home = () => {
                         We specialize in mobile app development, creating powerful, user-friendly applications that elevate your business and enhance customer engagement. In today’s fast-paced digital landscape, having a mobile presence is essential, and our expert team is here to help you navigate the complexities of mobile app development from concept to launch.
                       </p>
                       <div className="crv-more">
-                        <a href="services.html" className="mt-30 ls1 fz-12 text-u">
+                        <a href="/services" className="mt-30 ls1 fz-12 text-u">
                           Read More
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -410,7 +410,7 @@ const Home = () => {
                         We help businesses transform innovative ideas into successful products. Our expert team collaborates closely with clients to understand their unique vision and market needs, ensuring alignment with business objectives. We offer end-to-end product management solutions, product strategy development, roadmap planning, and lifecycle management.
                       </p>
                       <div className="crv-more">
-                        <a href="services.html" className="mt-30 ls1 fz-12 text-u">
+                        <a href="/services" className="mt-30 ls1 fz-12 text-u">
                           Read More
                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -500,7 +500,7 @@ const Home = () => {
                       <h5>Cloud Services</h5>
                     </div>
                   </div>
-                  <a href="cloud-services.html" className="link-overlay"></a>
+                  <a href="cloud-/services" className="link-overlay"></a>
                 </div>
               </div>
             </section>
@@ -593,7 +593,7 @@ const Home = () => {
                               <div className="text">
                                 <p>{tab.description}</p>
                               </div>
-                              <a href="services.html" className="mt-30">
+                              <a href="/services" className="mt-30">
                                 <span className="mr-15">Read More</span>
                                 <i className="fas fa-long-arrow-alt-right"></i>
                               </a>
@@ -626,7 +626,7 @@ const Home = () => {
                 {/* Call to Action Section */}
                 <div className="call-box text-center mb-80">
                   <h2>
-                    <a href="contact.html">
+                    <a href="/contact">
                       Let's <span className="stroke">Discuss</span>
                     </a>
                     <span className="arrow">
@@ -710,7 +710,7 @@ const Home = () => {
                           <p className="fz-13">
                             Copyright ©️{' '}
                             <span className="underline">
-                              <a href="index.html" target="_blank" rel="noopener noreferrer">
+                              <a href="/" target="_blank" rel="noopener noreferrer">
                                 Kovalty Technologies
                               </a>
                             </span>{' '}
